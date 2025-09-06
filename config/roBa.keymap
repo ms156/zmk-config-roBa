@@ -79,7 +79,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP> ;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
@@ -105,7 +105,7 @@
             bindings = <
 &kp ESC                     &kp KP_NUMBER_7         &kp UP_ARROW     &kp KP_NUMBER_9          &kp SLASH                                               &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_PARENTHESIS
 &kp HOME                    &kp LEFT_ARROW          &kp DOWN_ARROW   &kp RIGHT_ARROW          &kp END    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp LG(LS(LEFT_ARROW))  &kp KP_NUMBER_2  &kp LG(LS(RIGHT_ARROW))  &kp EQUAL  &kp EQUAL                    &trans          &kp ASTRK     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp LG(LS(LEFT_ARROW))  &kp KP_NUMBER_2  &kp LG(LS(RIGHT_ARROW))  &kp MINUS  &kp EQUAL                    &trans          &kp ASTRK     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
 &trans                      &trans                  &trans           &trans                   &trans     &trans                       &trans          &kp NUMBER_0                                            &kp PIPE
             >;
         };
